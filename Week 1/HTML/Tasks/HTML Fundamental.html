@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+</head>
+
+<body>
+
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- Hero -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <header>
+        <h1 id="hero-heading">Build Better Products</h1>
+      </header>
+
+      <p id="hero-description">
+        Our platform helps teams create, launch, and scale products faster.
+      </p>
+
+      <a href="#contact" role="button" aria-describedby="hero-description">
+        Get Started
+      </a>
+    </section>
+
+    <!-- Features -->
+    <section id="features" aria-labelledby="features-heading">
+      <header>
+        <h2 id="features-heading">Features</h2>
+      </header>
+
+      <div role="list">
+
+        <article role="listitem">
+          <h3>Fast Performance</h3>
+          <p>
+            Optimized architecture ensures quick load times and smooth user experience.
+          </p>
+        </article>
+
+        <article role="listitem">
+          <h3>Secure by Design</h3>
+          <p>
+            Built with modern security practices to protect your data.
+          </p>
+        </article>
+
+        <article role="listitem">
+          <h3>Easy Integration</h3>
+          <p>
+            Connect seamlessly with your existing tools and workflow.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <header>
+        <h2 id="contact-heading">Contact Us</h2>
+        <p>Have questions? Send us a message.</p>
+      </header>
+
+      <form action="#" method="post" novalidate>
+
+        <fieldset>
+          <legend>Send us a message</legend>
+
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-describedby="email-help"
+            >
+            <small id="email-help">
+              We'll only use your email to respond.
+            </small>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+        </fieldset>
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Your Company. All rights reserved.</p>
+
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <address>
+      Contact: 
+      <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+    </address>
+
+  </footer>
+
+</body>
+</html>

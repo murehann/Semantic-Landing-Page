@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Muhammad" autocomplete="on" required autofocus>
+            </p>
+            <p>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Ali" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="password" required>
+            </p>
+            <p>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="03121234567" pattern="03[0-9]{9}" required>
+            </p>
+            <p>
+                <label for="coffee">Favorite Coffee:</label>
+                <input type="text" name="coffee" id="coffee" list="coffee-list">
+                <datalist id="coffee-list">
+                    <option value="coffee">
+                    <option value="lattee">
+                    <option value="espresso">
+                    <option value="cartado">
+                    <option value="americano">
+                    <option value="other">
+                </datalist>
+            </p>
+            <!-- <p>
+                <label for="coffee">Favorite Coffee:</label>
+                <select name="coffee" id="coffee">
+                    <optgroup label="Coffees">
+                        <option value="ragular coffee" selected>Ragular Coffee</option>
+                        <option value="iced coffee">Iced Coffee</option>
+                    </optgroup>
+                    <optgroup label="other">
+                        <option value="latte">Latte</option>
+                    </optgroup>
+                </select>
+            </p> -->
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Favorite Food</legend>
+            <p>
+                <input type="radio" name="food" id="tacos" value="tacos">
+                <label for="tacos">Tacos</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="pizza" value="pizza">
+                <label for="pizza">Pizza</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="other" value="other">
+                <label for="other">Other</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Pet Info</legend>
+            <p>
+                <input type="checkbox" name="pets" id="dog" value="dog">
+                <label for="dog">Dog</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="cat" value="cat">
+                <label for="cat">Cat</label>
+            <p>
+                <input type="checkbox" name="pets" id="fish" value="fish">
+                <label for="fish">Fish</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Send me a note</legend>
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" placeholder="Type your message here" rows="10" cols="50"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html> 
