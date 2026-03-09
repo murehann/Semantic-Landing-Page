@@ -82,7 +82,7 @@
       </header>
       <ul class="features-list">
         <li>
-          <button>
+          <button class="features-overlay-btn" onclick="onFeaturesOverlay()">
             <h3>Accept and optimize payments globally—online and in person</h3>
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="currentColor"/>
@@ -91,7 +91,7 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="features-overlay-btn" onclick="onFeaturesOverlay()">
             <h3>Enable any billing model</h3>
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="currentColor"/>
@@ -100,7 +100,7 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="features-overlay-btn" onclick="onFeaturesOverlay()">
             <h3>Monetize through agentic commerce</h3>
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="currentColor"/>
@@ -109,7 +109,7 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="features-overlay-btn" onclick="onFeaturesOverlay()">
             <h3>Create a card issuing program</h3>
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="currentColor"/>
@@ -118,7 +118,7 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="features-overlay-btn" onclick="onFeaturesOverlay()">
             <h3>Access borderless money movement with stablecoins and crypto</h3>
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="currentColor"/>
@@ -127,7 +127,7 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="features-overlay-btn" onclick="onFeaturesOverlay()">
             <h3>Embed payments in your crypto platform</h3>
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="currentColor"/>
@@ -137,44 +137,103 @@
         </li>
       </ul> 
     </section>
+
   </main>
 
-  <div class="features-overlay-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-    <section class="feature-overview">
-      <h2></h2>
-      <p></p>
-      <ul></ul>
-      <a href=""></a>
-      <a href=""></a>
-    </section>
-    <section class="feature-images">
-      <img src="" alt="">
-      <img src="" alt="">
-      <ul></ul>
-    </section>
-    <section class="discover-more">
-      <h2></h2>
-      <div>
+  <footer>
+    
+  </footer>
+
+  <dialog id="features-overlay" aria-labelledby="feature-overview-title">
+    <button onclick="offFeaturesOverlay()" aria-label="Close dialog">X</button>
+
+    <section class="feature-overview" aria-labelledby="feature-overview-title">
+
+      <header>
+        <h1 id="feature-overview-title">Accept and optimize payments globally—online and in person</h1>
+        <p>Simplify your checkout, expand your reach, and boost conversion with AI-powered tools to accept payments anywhere.</p>
+        <ul>
+          <li>Create a seamless checkout experience</li>
+          <li>Expand to new markets faster</li>
+        </ul>
+        <div class="feature-actions">
+          <a href="/">Explore Payments</a>
+          <a href="">See pricing details</a>
+        </div>
+      </header>  
+
+      <figure>
         <img src="" alt="">
-        <p></p>
-        <a href=""></a>
-      </div>
+        <img src="" alt="">
+      </figureS>
+
+      <section class="feature-benefits">
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true"><path fill="url(#g1)" d="M11.358 6.19a.75.75 0 0 0-1.216-.88L7.436 9.059l-1.629-1.81a.75.75 0 0 0-1.115 1.004l2.25 2.5a.75.75 0 0 0 1.166-.063z"></path><path fill="url(#g1)" fill-rule="evenodd" d="m4.828 14.219 2.256 1.504a1.65 1.65 0 0 0 1.832 0l2.256-1.504a8 8 0 0 0 3.55-6.213l.248-4.478c.016-.287-.212-.53-.494-.582C12.746 2.622 9.968.936 8.92.27A1.7 1.7 0 0 0 8 0c-.325 0-.643.096-.919.271-1.049.666-3.827 2.35-5.557 2.675-.282.053-.51.295-.494.582l.249 4.478a8 8 0 0 0 3.55 6.213M2.776 7.923 2.57 4.226c.905-.28 1.867-.734 2.682-1.16a38 38 0 0 0 2.632-1.528A.2.2 0 0 1 8 1.5c.029 0 .07.009.115.038.543.344 1.539.956 2.632 1.528.816.426 1.778.88 2.682 1.16l-.205 3.697a6.5 6.5 0 0 1-2.885 5.048l-2.255 1.504a.15.15 0 0 1-.168 0L5.66 12.97a6.5 6.5 0 0 1-2.884-5.048" clip-rule="evenodd"></path><defs><linearGradient id="g1" x1="9.072" x2="4.376" y1="-4.503" y2="18.149" gradientUnits="userSpaceOnUse"><stop stop-color="var(--accent-gradient-color-stop-1)"></stop><stop offset=".601" stop-color="var(--accent-gradient-color-stop-2)"></stop><stop offset="1" stop-color="var(--accent-gradient-color-stop-3)"></stop></linearGradient></defs></svg>
+            <p>Move faster and reduce downtime with increased developer productivity and leading reliability.</p>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true"><path fill="url(#g1)" d="M11.358 6.19a.75.75 0 0 0-1.216-.88L7.436 9.059l-1.629-1.81a.75.75 0 0 0-1.115 1.004l2.25 2.5a.75.75 0 0 0 1.166-.063z"></path><path fill="url(#g1)" fill-rule="evenodd" d="m4.828 14.219 2.256 1.504a1.65 1.65 0 0 0 1.832 0l2.256-1.504a8 8 0 0 0 3.55-6.213l.248-4.478c.016-.287-.212-.53-.494-.582C12.746 2.622 9.968.936 8.92.27A1.7 1.7 0 0 0 8 0c-.325 0-.643.096-.919.271-1.049.666-3.827 2.35-5.557 2.675-.282.053-.51.295-.494.582l.249 4.478a8 8 0 0 0 3.55 6.213M2.776 7.923 2.57 4.226c.905-.28 1.867-.734 2.682-1.16a38 38 0 0 0 2.632-1.528A.2.2 0 0 1 8 1.5c.029 0 .07.009.115.038.543.344 1.539.956 2.632 1.528.816.426 1.778.88 2.682 1.16l-.205 3.697a6.5 6.5 0 0 1-2.885 5.048l-2.255 1.504a.15.15 0 0 1-.168 0L5.66 12.97a6.5 6.5 0 0 1-2.884-5.048" clip-rule="evenodd"></path><defs><linearGradient id="g1" x1="9.072" x2="4.376" y1="-4.503" y2="18.149" gradientUnits="userSpaceOnUse"><stop stop-color="var(--accent-gradient-color-stop-1)"></stop><stop offset=".601" stop-color="var(--accent-gradient-color-stop-2)"></stop><stop offset="1" stop-color="var(--accent-gradient-color-stop-3)"></stop></linearGradient></defs></svg>
+            <p>Move faster and reduce downtime with increased developer productivity and leading reliability.</p>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true"><path fill="url(#g1)" d="M11.358 6.19a.75.75 0 0 0-1.216-.88L7.436 9.059l-1.629-1.81a.75.75 0 0 0-1.115 1.004l2.25 2.5a.75.75 0 0 0 1.166-.063z"></path><path fill="url(#g1)" fill-rule="evenodd" d="m4.828 14.219 2.256 1.504a1.65 1.65 0 0 0 1.832 0l2.256-1.504a8 8 0 0 0 3.55-6.213l.248-4.478c.016-.287-.212-.53-.494-.582C12.746 2.622 9.968.936 8.92.27A1.7 1.7 0 0 0 8 0c-.325 0-.643.096-.919.271-1.049.666-3.827 2.35-5.557 2.675-.282.053-.51.295-.494.582l.249 4.478a8 8 0 0 0 3.55 6.213M2.776 7.923 2.57 4.226c.905-.28 1.867-.734 2.682-1.16a38 38 0 0 0 2.632-1.528A.2.2 0 0 1 8 1.5c.029 0 .07.009.115.038.543.344 1.539.956 2.632 1.528.816.426 1.778.88 2.682 1.16l-.205 3.697a6.5 6.5 0 0 1-2.885 5.048l-2.255 1.504a.15.15 0 0 1-.168 0L5.66 12.97a6.5 6.5 0 0 1-2.884-5.048" clip-rule="evenodd"></path><defs><linearGradient id="g1" x1="9.072" x2="4.376" y1="-4.503" y2="18.149" gradientUnits="userSpaceOnUse"><stop stop-color="var(--accent-gradient-color-stop-1)"></stop><stop offset=".601" stop-color="var(--accent-gradient-color-stop-2)"></stop><stop offset="1" stop-color="var(--accent-gradient-color-stop-3)"></stop></linearGradient></defs></svg>
+            <p>Move faster and reduce downtime with increased developer productivity and leading reliability.</p>
+          </li>
+        </ul>
+      </section>
     </section>
+
+    <section class="discover-more" aria-labelledby="discover-title">
+      <h2 id="discover-title">More to Discover</h2>
+      <ul>
+        <li>
+          <img src="" alt="">
+          <p>Boost revenue and reduce network costs by improving acceptance rates with AI-powered optimizations.</p>
+          <h3>
+            <a href="#">Authorization Boost </a>
+          </h3>
+        </li>
+        <li>
+          <img src="" alt="">
+          <p>Boost revenue and reduce network costs by improving acceptance rates with AI-powered optimizations.</p>
+          <h3>
+            <a href="#">Authorization Boost </a>
+          </h3>
+        </li>
+        <li>
+          <img src="" alt="">
+          <p>Boost revenue and reduce network costs by improving acceptance rates with AI-powered optimizations.</p>
+          <h3>
+            <a href="#">Authorization Boost </a>
+          </h3>
+        </li>
+      </ul>
+    </section>
+
     <article>
+      <img src="" alt="Amazon Logo">
       <blockquote>
-        <p></p>
+        <p>Finding a partner that can keep up not only with volume spikes but with other aspects of scalability is absolutely critical to us. One of the things we really valued about Stripe is it got us into a lot of different countries quickly and helped lower the barrier of entry for us.</p>
       </blockquote>
-      <cite></cite>
-      <a href=""></a>
+      <footer>
+        <cite>Ben Volk, Director of Global Payment Acceptance & Customer Experience, Amazon</cite>
+      </footer>
+      <a href="#">Read the story </a>
     </article>
+
     <footer>
-      <h2></h2>
-      <a href=""></a>
-      <a href=""></a>
+      <h2>Get started with Payments</h2>
+      <div>
+        <a href="#">Start now</a>
+        <a href="#">Contact sales</a>
+      </div>
     </footer>
-  </div>
+   </dialog>
 
   <script>
+
   // Toggle menu function – only handles the clicked button
   function toggleMenu(button) {
     const nav = button.closest('nav');
@@ -197,12 +256,10 @@
       menu.removeAttribute('hidden');
     }
   }
-
   // Global listener – collapses menus when focus leaves the nav
   document.addEventListener('focusin', (event) => {
     const nav = event.target.closest('nav[aria-label="Main navigation"]');
     if (!nav) return;
-
     nav.querySelectorAll('button[aria-haspopup="true"]').forEach(button => {
       const menu = button.nextElementSibling;
       if (!button.contains(event.target) && !menu.contains(event.target)) {
@@ -211,7 +268,6 @@
       }
     });
   });
-
   // Global listener – closes menu on Escape
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
@@ -227,6 +283,32 @@
       openButton.focus();
     }
   });
-</script>
+
+  // OVERLAY
+  // adding event listener to close dialog if clicked outside
+  const dialog = document.getElementById("features-overlay");
+  dialog.addEventListener("click", (event) => {
+    const rect = dialog.getBoundingClientRect();
+
+    const clickedInDialog =
+      rect.top <= event.clientY &&
+      event.clientY <= rect.bottom &&
+      rect.left <= event.clientX &&
+      event.clientX <= rect.right;
+
+    if (!clickedInDialog) {
+      dialog.close();
+    }
+  });
+  // open dialog
+  function onFeaturesOverlay() {
+  document.getElementById("features-overlay").showModal();
+}
+  // close dialog
+  function offFeaturesOverlay() {
+  document.getElementById("features-overlay").close();
+}
+
+  </script>
 </body>
 </html>
