@@ -20,10 +20,10 @@
           </button>
           <ul role="menu" class="nav-link-submenu">
             <li role="menuitem"> 
-              <a href="#">Sub-item 1</a>
+              <a href="#">Product 1</a>
             </li>
             <li role="menuitem"> 
-              <a href="#">Sub-item 2</a>
+              <a href="#">Product 2</a>
             </li>
           </ul>
         </li>
@@ -34,10 +34,10 @@
           </button>
           <ul role="menu" class="nav-link-submenu">
             <li role="menuitem"> 
-              <a href="#">Sub-item 1</a>
+              <a href="#">Solution 1</a>
             </li>
             <li role="menuitem"> 
-              <a href="#">Sub-item 2</a>
+              <a href="#">Solution 2</a>
             </li>
           </ul>
         </li>
@@ -48,10 +48,10 @@
           </button>
           <ul role="menu" class="nav-link-submenu">
             <li role="menuitem"> 
-              <a href="#">Sub-item 1</a>
+              <a href="#">Developer 1</a>
             </li>
             <li role="menuitem"> 
-              <a href="#">Sub-item 2</a>
+              <a href="#">Developer 2</a>
             </li>
           </ul>
         </li>
@@ -69,21 +69,19 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li >
           <a href="#">Pricing</a>
         </li>
       </ul>
       <div class="header-nav-cta">
         <a href="#" class="nav-cta-link">Sign in</a>
-        <a href="#" class="nav-cta-button">
+        <a href="#" class="cta-button">
           Contact sales
-          <svg class="hds-icon hds-icon-hover-arrow" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M0.5 5.5h7"></path><path d="M1.5 1.5l4 4-4 4"></path></svg>
+          <svg class="hds-icon hds-icon-hover-arrow cta-button-svg" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M0.5 5.5h7"></path><path d="M1.5 1.5l4 4-4 4"></path></svg>
         </a>
       </div>
     </nav>
   </header>
-
-  <hr>
 
   <main>
     <section class="hero">
@@ -91,13 +89,11 @@
           Financial infrastructure to grow your revenue.
           <span>Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.</span>
         </h1>
-        <div>
-          <a href="#">Get Started</a>
-          <a href="#">Sign up with Google</a>
+        <div class="hero-actions">
+          <a href="#" class="cta-button">Get Started</a>
+          <a href="#" class="cta-button">Sign up with Google</a>
         </div>
     </section>
-
-    <hr>
 
     <section class="features">
       <header>
@@ -164,43 +160,69 @@
 
   </main>
 
-  <hr>
-
   <footer>
 
-    <section class="footer-contact">
-      <h2>Contact Me</h2>
+    <section class="footer-contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Talk to our team</h2>
+
       <form action="#" method="post">
         <fieldset>
-          <legend>Send a message</legend>
+          <legend>Contact sales</legend>
 
           <p>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required>
+            <label for="work-email">Work email</label>
+            <input
+              type="email"
+              id="work-email"
+              name="work-email"
+              autocomplete="email"
+              required
+            >
           </p>
 
           <p>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
+            <label for="company-name">Company name</label>
+            <input
+              type="text"
+              id="company-name"
+              name="company-name"
+              autocomplete="organization"
+              required
+            >
           </p>
 
           <p>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+            <label for="company-size">Company size</label>
+            <select id="company-size" name="company-size">
+              <option value="">Select size</option>
+              <option value="1-10">1–10 employees</option>
+              <option value="11-50">11–50 employees</option>
+              <option value="51-200">51–200 employees</option>
+              <option value="201-500">201–500 employees</option>
+              <option value="500+">500+ employees</option>
+            </select>
           </p>
 
-          <button type="submit">Send message</button>
+          <p>
+            <label for="message">How can we help?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us about your project or what you’d like help with."
+            ></textarea>
+          </p>
+
+          <button type="submit">Contact sales</button>
         </fieldset>
       </form>
     </section>
-    
-    <hr>
 
-    <nav aria-label="Footer Nav">
-      <ul>
+    <nav aria-label="Footer Nav" class="footer-nav">
+      <ul class="footer-nav-list">
         <li>
           <h3>Products and pricing</h3>
-          <ul>
+          <ul class="footer-nav-link-list">
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Atlas</a></li>
             <li><a href="#">Authorization Boost</a></li>
@@ -234,7 +256,7 @@
         </li>
         <li>
           <h3>Solutions</h3>
-          <ul>
+          <ul class="footer-nav-link-list">
             <li><a href="#">Enterprises</a></li>
             <li><a href="#">Startups</a></li>
             <li><a href="#">Agentic commerce</a></li>
@@ -258,7 +280,7 @@
         </li>
         <li>
           <h3>Developers</h3>
-          <ul>
+          <ul class="footer-nav-link-list">
             <li><a href="#">Documentation</a></li>
             <li><a href="#">API reference</a></li>
             <li><a href="#">API status</a></li>
@@ -270,13 +292,11 @@
       </ul>
     </nav>
 
-    <hr>
-
     <section class="footer-meta">
-      <p>
-        <a href="/us">United States</a>
+      <p class="region-link">
+        <a href="/us">United States (English)</a>
       </p>
-      <p>
+      <p class="rights">
         <small>&copy; 2026 Stripe, LLC. </small>
       </p>
     </section>
@@ -391,6 +411,18 @@
     item.classList.toggle('is-open', !isExpanded);
   }
 
+  // remove keyboard-opened menu when another item is hovered
+  document.querySelectorAll('.header-nav-links > li').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const nav = item.closest('nav');
+
+      nav.querySelectorAll('.nav-link-button[aria-haspopup="true"]').forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.closest('li').classList.remove('is-open');
+      });
+    });
+  });
+
   // close menus when focus leaves nav
   document.addEventListener('focusin', (event) => {
     const nav = event.target.closest('nav[aria-label="Primary navigation"]');
@@ -446,6 +478,13 @@
   function offFeaturesOverlay() {
   document.getElementById("features-overlay").close();
 }
+
+  // calculate max height of the footer-nav:
+  window.addEventListener('load', () => {
+      const list = document.querySelector('.footer-nav-list');
+      const maxHeight = Math.max(...[...list.children].map(el => el.offsetHeight));
+      list.style.height = maxHeight + 'px';
+  });
 
   </script>
 </body>
